@@ -1,0 +1,261 @@
+/* base element style */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f5f5f5;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+p {
+text-align: center;	
+opacity: .70;
+}
+
+img {
+	width:100%;
+	display: block;
+	margin: 2em auto;
+}
+
+/* navigation */
+
+.header-name {
+  text-align: center; 
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: arial;
+}
+
+.main-nav a {
+	font-weight: bold;
+	font-family: arial;
+	display: block;
+	text-align: center;
+	margin: 5px auto;
+	padding: 10px 0;
+	background: white;
+}
+
+.main-nav {
+	font-size: 1em;
+	color: black;
+	text-transform: uppercase;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.profile_section {
+	font-size: 1.1em;
+	font-family: arial;
+	opacity: .50;
+}
+
+.footer-nav {
+	display: none;
+}
+
+/* layout containers */
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto 10% auto;
+}
+
+.profile_img {
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+
+#portfolio {
+	background-color: white;
+	padding: 1em;
+	text-align: center;
+}
+
+.section_name {
+	font-size: 1em;
+	color: black;
+	text-transform: uppercase;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#skills {
+	text-align: center;
+	margin: auto;
+	padding: 1em;
+	background-image: radial-gradient( #ffe4b5 40%, #b3b3ff );
+	}
+
+.contact-info {
+	padding: 0 .5em;
+	font-weight: bold;
+}
+
+.bottom-styling{
+	text-align: center;
+	margin: 4em auto;
+}
+
+.footer {
+	margin: auto;
+	width: 90%;
+	border-top-style: groove;	
+}
+
+.to_top {
+	font-size: 1em;
+	float: right;
+}
+
+.footer_name{
+	font-size: 1em;
+	float: left;
+}
+	
+/* media queries */
+
+@media (min-width: 768px) {
+
+.main-nav {
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.main-nav li {
+	text-align: center;
+	font-weight: bold;
+	font-family: arial;
+	display: inline-block;
+	padding: 0;
+	margin: 1em 1em 3em 1em;
+}
+
+.main-nav a {
+	padding: 0;
+	background: none;
+}
+
+.profile_img {
+	float: right;
+	width: 40%;
+}
+
+.profile_section {
+	width: 55%;
+	font-size: 1.20em;
+	margin: 0;
+}
+
+.marketing,
+.travel,
+.gallery,
+.search,
+.map,
+.calculator,
+.html,
+.html_css {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 46%;
+	margin: auto;
+	padding: 0 .5em;
+}
+
+.skill-img1,
+.skill-img2 {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: 46%;
+	margin: auto;
+	padding: 0 .5em;
+}
+
+.to_top {
+	display: none;
+}
+
+.footer-nav {
+	display: inline-block;
+    font-size: 1em;
+	font-weight: bold;
+	color: black;
+	text-transform: uppercase;
+	list-style-type: none;
+	float: right;
+	
+}
+
+.footer-nav li {
+	display: inline-block;
+	padding: 0 .3em;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+}
+@media (min-width: 1024px) {
+	
+	.header-name {
+		font-size: 1.5em;
+		float: left;
+		margin: auto;
+	}
+	
+	.main-nav {
+		float: right;
+		margin: auto;
+	}
+	
+	.main-nav li {
+		margin-top: 0; 
+	}
+	
+	.container {
+	margin: 1em auto;
+	}
+	
+	#portfolio {
+	margin: 0 1em;
+	}
+	
+	#skills {
+	margin: 0 1em;
+	}
+	
+	.profile_section{
+		font-size: 1.5em;
+	}
+	
+.marketing,
+.travel,
+.gallery,
+.search,
+.map,
+.calculator {
+	display: inline-block;
+	position: relative;
+	width: 33%;
+	margin: auto; 
+	padding: .3em;
+}
+}
